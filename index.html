@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donut Clicker</title>
-  </head>
-  <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donut Clicker</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="flexbar">
+      <button class="collapsible">Fred the Baker Baking Company</button>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris
+          nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+    <div class="flexbar">
+      <button class="collapsible">Inspiration</button>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris
+          nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+    <div class="flexbar">
+      <button class="collapsible">Contact</button>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris
+          nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+    <div class = 'spacers'></div>
+    <script src="./header.js"></script>
+  </header>
+  <div class="inner-cursor"></div>
+  <div class="outer-cursor"></div>
+  <script src="cursor.js"></script>
+  <div class = 'container'>
+    <p>Score: <span id="score">0</span></p>
+    <img src="/images/donut.jpg" height="256px" width="256px" onclick="addToScore()">
+    <button onclick="buyClicker()">Cost: [<span id="cost">15</span>] Clickers: <span id="clickers">0</span></span></button>
+    <button onclick="buyMultiplier()">Cost: [<span id="multiplyCost">10</span>] Multipliers: <span id="multiple">1</span></span></button>
+    <script src="game.js"></script>
+  </div>
+</body>
+
 </html>
