@@ -1,6 +1,3 @@
-// const container = (document.querySelector('.container').innerText =
-//   'mmmmmmmmm doughnuts.... ahhhhhhh!');
-
 var coll = document.getElementsByClassName("collapsible");
 var i;
 

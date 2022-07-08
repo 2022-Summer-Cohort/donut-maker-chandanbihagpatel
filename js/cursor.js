@@ -7,8 +7,6 @@ function moveCursor(e){
   let x = e.clientX;
   let y = e.clientY;
 
-  console.log(x,y);
-
   innerCursor.style.left = `${x}px`;
   innerCursor.style.top = `${y}px`;
 
@@ -17,15 +15,15 @@ function moveCursor(e){
 
 }
 
-let buttons = Array.from(document.querySelectorAll("button"));
+// let buttons = Array.from(document.querySelectorAll("button"));
 
-buttons.forEach(_button => {
-  buttons.addEventListener("mouseover", () => {
-    innerCursor.classList.add("grow");
-  });
-  buttons.addEventListener("mouseleave", () => {
-    innerCursor.classList.remove("grow");
-  });
+// buttons.forEach(_button => {
+//   buttons.addEventListener("mouseover", () => {
+//     innerCursor.classList.add("grow");
+//   });
+//   buttons.addEventListener("mouseleave", () => {
+//     innerCursor.classList.remove("grow");
+//   });
 
   
-});
+// });
